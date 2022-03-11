@@ -17,7 +17,10 @@ fun main() {
             println("Enter the event boost for soul eggs (If there is none, enter 1)")
             eventBoost = readln().toDouble()
             soulEggReward = soulEggCalculate(prestEarnings, eventBoost)
-            print(soulEggReward)
+            if(soulEggReward < 0) {
+                soulEggReward = 0.0
+            }
+            println("You would recieve $soulEggReward soul eggs from prestige")
         } catch(e: java.lang.NumberFormatException) {}
     }
 }
