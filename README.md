@@ -1,1 +1,2 @@
 # Egg-Inc-Calculator
+This calculator for the game Egg Inc can be used to calculate the amount of Soul Eggs that you would get from prestiging. Simply enter your Prestige Earnings (And a few more things) and watch as this calculator predicts how much soul eggs you would get.
