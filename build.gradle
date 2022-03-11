@@ -6,6 +6,18 @@ plugins {
 group = 'com.quantumzizo.eggIncCalculator'
 version = '0.1'
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': "com.quantumzizo.eggIncCalculator.MainKt"
+        )
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('')
+}
+
 repositories {
     mavenCentral()
 }
@@ -19,9 +31,9 @@ test {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '17'
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '17'
 }
