@@ -25,8 +25,8 @@ fun main() {
                 println("Enter the event boost for soul eggs (If there is none, enter 1)")
                 eventBoost = readln().toDouble()
                 soulEggReward = soulEggCalculate(prestEarnings, prestBonus, eventBoost)
-                soulEggReward.roundToLong()
-                println("You would receive $soulEggReward soul eggs from prestige")
+                soulEggReward
+                println("You would receive ${soulEggReward.roundToLong()} soul eggs from prestige")
             } else if(onOrOff == 'n' || onOrOff == 'N') {
                 exitProcess(0)
             }
