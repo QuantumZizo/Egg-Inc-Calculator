@@ -1,5 +1,6 @@
 package com.quantumzizo.eggIncCalculator
 
+import kotlin.math.roundToLong
 import kotlin.system.exitProcess
 
 class Main
@@ -14,7 +15,7 @@ var soulEggReward:Double = 0.0
 fun main() {
     while(state) {
         try {
-            println("Continue or Exit (Enter y or n. Entering n will exit")
+            println("Continue or Exit (Enter y or n. Entering n will exit)")
             onOrOff = readln().single()
             if(onOrOff == 'y' || onOrOff == 'Y') {
                 println("Enter your prestige earnings in game (It can be checked in the stats menu)")
@@ -24,7 +25,8 @@ fun main() {
                 println("Enter the event boost for soul eggs (If there is none, enter 1)")
                 eventBoost = readln().toDouble()
                 soulEggReward = soulEggCalculate(prestEarnings, prestBonus, eventBoost)
-                println("You would recieve $soulEggReward soul eggs from prestige")
+                soulEggReward.roundToLong()
+                println("You would receive $soulEggReward soul eggs from prestige")
             } else if(onOrOff == 'n' || onOrOff == 'N') {
                 exitProcess(0)
             }

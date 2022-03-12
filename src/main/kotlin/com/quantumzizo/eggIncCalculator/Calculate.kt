@@ -3,6 +3,7 @@ package com.quantumzizo.eggIncCalculator
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
+
 class Calculate
 
 fun soulEggCalculate(prestEarnings: Double, prestBonus: Double, eventBoost: Double): Double {
