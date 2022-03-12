@@ -18,7 +18,7 @@ fun main() {
             println("Continue or Exit (Enter y or n. Entering n will exit)")
             onOrOff = readln().single()
             if(onOrOff == 'y' || onOrOff == 'Y') {
-                println("Enter your prestige earnings in game (It can be checked in the stats menu)")
+                println("Enter the prestige earnings you would think you'd need to get an amount of soul eggs")
                 prestEarnings = readln().toDouble()
                 println("Enter the soul egg multiplier given by a boost in game (If you do not have a boost active, enter 1)")
                 prestBonus = readln().toDouble()
