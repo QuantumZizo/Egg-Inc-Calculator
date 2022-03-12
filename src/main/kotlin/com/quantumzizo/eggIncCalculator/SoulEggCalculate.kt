@@ -4,8 +4,6 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
 
-class Calculate
-
 fun soulEggCalculate(prestEarnings: Double, prestBonus: Double, eventBoost: Double): Double {
     return prestBonus * eventBoost * (
                       max(0.0, (10.0.pow(-6) * min(prestEarnings, 10.0.pow(12))).pow(0.15) - 10.0.pow(-6).pow(0.15))
