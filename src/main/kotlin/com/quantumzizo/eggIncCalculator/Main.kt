@@ -1,5 +1,6 @@
 package com.quantumzizo.eggIncCalculator
 
+import kotlin.math.round
 import kotlin.math.roundToLong
 import kotlin.system.exitProcess
 
@@ -22,7 +23,8 @@ fun main() {
                 println("Enter the event boost for soul eggs (If there is none, enter 1)")
                 eventBoost = readln().toDouble()
                 soulEggReward = soulEggCalculate(prestEarnings, eventBoost)
-                println("You would receive ${soulEggReward.roundToLong()} soul eggs from prestige")
+                soulEggReward = round(soulEggReward)
+                println("You would receive $soulEggReward soul eggs from prestige")
             } else if(onOrOff == 'n' || onOrOff == 'N') {
                 exitProcess(0)
             }
