@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.quantumzizo.eggIncCalculator'
-version = '1.0.3'
+version = '1.0.4'
 
 jar {
     manifest {
