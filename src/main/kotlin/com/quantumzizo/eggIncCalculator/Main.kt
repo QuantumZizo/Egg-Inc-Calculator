@@ -1,7 +1,6 @@
 package com.quantumzizo.eggIncCalculator
 
 import kotlin.math.round
-import kotlin.math.roundToLong
 import kotlin.system.exitProcess
 
 class Main
