@@ -16,7 +16,7 @@ fun soulEggCalculate(prestEarnings: Double, prestBonus: Double,  eventBoost: Dou
                     + max(0.0, (10.0.pow(-6) * prestEarnings).pow(0.21) - 10.0.pow(54).pow(0.21))
             )
     if(soulEggReward > 1E60) {
-        soulEggReward = eventBoost * (10.0.pow(-6) * prestEarnings).pow(0.21) - 1.56 * 10.0.pow(11)
+        soulEggReward = prestBonus * eventBoost * (10.0.pow(-6) * prestEarnings).pow(0.21) - 1.56 * 10.0.pow(11)
     }
     return soulEggReward
 }
